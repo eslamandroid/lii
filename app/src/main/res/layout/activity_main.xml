@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="340dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="300dp"
+        android:max="40"
+        android:progress="8"
+        android:progressDrawable="@drawable/progress_test_bar3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:id="@+id/line"
+        android:background="@drawable/dotted_line"
+        app:layout_constraintBottom_toBottomOf="@id/progress"
+        app:layout_constraintEnd_toEndOf="@id/progress"
+        app:layout_constraintStart_toStartOf="@id/progress"
+        app:layout_constraintTop_toTopOf="@id/progress"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/circle_openn"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_box_label"
+        app:layout_constraintBottom_toBottomOf="@id/progress"
+        app:layout_constraintStart_toStartOf="@id/progress"
+        app:layout_constraintTop_toTopOf="@+id/progress"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/circle_dot_deactive"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/progress"
+        app:layout_constraintStart_toEndOf="@id/image1"
+        app:layout_constraintTop_toTopOf="@+id/progress"
+        tools:ignore="ContentDescription" />
+
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/circle_dot_deactive"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/progress"
+        app:layout_constraintStart_toEndOf="@id/image2"
+        app:layout_constraintTop_toTopOf="@+id/progress"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/circle_dot_deactive"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/progress"
+        app:layout_constraintStart_toEndOf="@id/image3"
+        app:layout_constraintTop_toTopOf="@+id/progress"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@color/white"
+        android:text="next"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
